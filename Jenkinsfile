@@ -12,11 +12,11 @@ timeout(time: 60, unit: 'SECONDS') {
         sh "${GRADLE_HOME}/bin/gradle tasks"
 
         stage('Clone') {
-            git url: 'https://github.com/jeremycook123/devops-webapp1.git'                
+            git url: 'https://github.com/elijahdl/devops-webapp1.git'                
         }
 
         stage('Build') {
-            sh "${GRADLE_HOME}/bin/gradle build -PwarName=${RELEASENAME} --info"
+            sh "${GRADLE_HOME}/bin/gradle build --info"
         }
 
         stage('Archive') {
