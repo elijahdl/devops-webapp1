@@ -1,5 +1,5 @@
 //START-OF-SCRIPT
-//comment1
+//comment2
 timeout(time: 60, unit: 'SECONDS') {
     node('scoob') {
         def RELEASENAME = "webapp.war"
